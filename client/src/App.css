@@ -1,0 +1,139 @@
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero {
+  background: radial-gradient(circle at top, rgba(100, 108, 255, 0.15), transparent 60%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.hero .tag {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #7fb5ff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.panel {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: rgba(16, 16, 32, 0.65);
+  backdrop-filter: blur(8px);
+}
+
+.panel header h2 {
+  margin: 0 0 0.25rem;
+}
+
+.panel header p {
+  margin: 0;
+  color: #9aa1b8;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-sm {
+  gap: 0.75rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+textarea,
+input,
+select {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.6rem 0.75rem;
+  background: rgba(0, 0, 0, 0.25);
+  color: inherit;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+button {
+  border-radius: 0.5rem;
+  border: 1px solid #646cff;
+  background: #646cff;
+  padding: 0.55rem 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+button.ghost {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.status {
+  color: #7fb5ff;
+  font-size: 0.9rem;
+}
+
+.error {
+  color: #ff7b7b;
+}
+
+.ok {
+  color: #67f39b;
+}
+
+.message-list,
+.chunk-list,
+.logs,
+.session-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.message-list li,
+.chunk-list li,
+.logs li,
+.session-list li {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+}
+
+.ciphertext,
+.plaintext {
+  word-break: break-all;
+  font-family: 'Fira Code', 'SFMono-Regular', Consolas, monospace;
+  font-size: 0.85rem;
+}
