@@ -1,0 +1,6 @@
+packages:
+  - client
+  - frontend
+  - backend
+  - tools/*
+
